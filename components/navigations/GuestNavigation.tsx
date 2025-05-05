@@ -6,14 +6,14 @@ import CartIconButton from '../CartIconButton'
 
 const GuestNavigation = () => {
   return (
-    <header className="sticky top-0 w-full px-1">
-      <nav className="h-16 flex items-center justify-between px-5 border-b border-gray-100 backdrop-blur-lg">
+    <header className="sticky top-0 w-full px-1 bg-white">
+      <nav className="h-16 flex items-center justify-between px-3 sm:px-5 border-b border-border backdrop-blur-lg">
         <Link
           href="/"
-          className="inline-flex items-center gap-1 font-bold"
+          className="inline-flex items-end gap-1.5 sm:gap-1 font-bold"
         >
-          <Icons.basket />
-          <span className="text-xl">Store</span>
+          <Icons.basket className="size-6 sm:size-7" />
+          <span className="text-base sm:text-lg">Emerse</span>
         </Link>
 
         <div className="inline-flex gap-4">

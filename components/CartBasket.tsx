@@ -3,10 +3,13 @@ import { motion } from 'motion/react'
 import useCart from '@/hooks/useCart'
 import CartBasketCollection from './CartBasketCollection';
 import CartBasketEmptySlate from './empty-slates/CartBasketEmptySlate';
+import { Icons } from './Icons';
 
 const CartBasket = () => {
   const {
-    cartItems
+    cartItems,
+    closeCart,
+    isCartOpen
   } = useCart();
   let content = null;
 
@@ -22,12 +25,22 @@ const CartBasket = () => {
 
   return (
     <motion.div 
-        className='absolute -left-1/2 -translate-x-1/2 w-56 h-40 bg-red-300 rounded-lg p-4'
-        initial={{ y: 115, opacity: 0 }}
-        animate={{ y: 110, opacity: 1 }}
-        exit={{ y: 150, opacity: 0 }}
-        transition={{ duration: .5, ease: "backInOut" }}
+      className='absolute -left-full -translate-x-1/2 w-[22rem] rounded-lg bg-white border border-black/15'
+      initial={{ y: 225, opacity: 0 }}
+      animate={{ y: 215, opacity: 1 }}
+      exit={{ y: 225, opacity: 0 }}
+      transition={{ duration: .5, ease: "backInOut" }}
     >
+      <header className='flex items-center justify-between border-b border-black/10 p-3'>
+        <h4 className='text-base font-medium'>Shopping Cart</h4>
+        <span 
+          onClick={closeCart}
+          className="hover:cursor-pointer"
+        >
+          <Icons.close className='fill-black/55' />
+        </span>
+      </header>
+
       {content}
     </motion.div>
   )

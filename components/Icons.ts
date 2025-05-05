@@ -1,8 +1,10 @@
 import { 
     Loader2, 
-    ShoppingBasket
+    ShoppingBasket,
+    Trash2
 } from "lucide-react";
 import {
+    RiCloseLine,
     RiEye2Line, 
     RiEyeOffLine,
     RiHeart2Line,
@@ -15,5 +17,7 @@ export const Icons = {
     eyeClosed: RiEyeOffLine,
     shoppingBag: RiShoppingBagFill,
     basket: ShoppingBasket,
-    heart: RiHeart2Line
+    heart: RiHeart2Line,
+    close: RiCloseLine,
+    trash: Trash2
 }

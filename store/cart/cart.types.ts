@@ -1,5 +1,6 @@
 interface ICart {
     id: string;
+    category: string;
     title: string;
     imageSource: string;
     price: number;
@@ -7,7 +8,6 @@ interface ICart {
 }
 
 interface ICartInitialState {
-    items: ICart[];
-    totalCartCount: number;
-    totalCartPrice: number;
+    cartItems: ICart[];
+    isCartBasketOpen: boolean
 }
