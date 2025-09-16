@@ -25,13 +25,13 @@ const CartBasket = () => {
 
   return (
     <motion.div 
-      className='absolute -left-full -translate-x-1/2 w-[22rem] rounded-lg bg-white border border-black/15'
+      className='absolute -left-[150%] -translate-x-1/2 w-[23rem] rounded-lg bg-white border border-black/15'
       initial={{ y: 225, opacity: 0 }}
       animate={{ y: 215, opacity: 1 }}
       exit={{ y: 225, opacity: 0 }}
       transition={{ duration: .5, ease: "backInOut" }}
     >
-      <header className='flex items-center justify-between border-b border-black/10 p-3'>
+      <header className='flex items-center justify-between border-b border-black/10 p-3.5'>
         <h4 className='text-base font-medium'>Shopping Cart</h4>
         <span 
           onClick={closeCart}

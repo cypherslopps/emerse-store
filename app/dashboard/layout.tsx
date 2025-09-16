@@ -1,4 +1,5 @@
-import DashboardNavigation from "@/components/navigations/DashboardNavigation";
+import DashboardContainer from "@/components/containers/DashboardContainer";
+
 
 export default function DashboardLayout({
   children,
@@ -6,9 +7,8 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main>
-      <DashboardNavigation />
+    <DashboardContainer>
       {children}
-    </main>
+    </DashboardContainer>
   );
 }

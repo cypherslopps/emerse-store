@@ -102,4 +102,12 @@
   .flex-center {
     @apply flex items-center justify-center;
   }
+
+  .section-container {
+    @apply w-11/12 md:w-10/12 py-12 mx-auto space-y-5;
+  }
+
+  .section-title {
+    @apply text-xl font-extrabold;
+  }
 }

@@ -48,10 +48,12 @@ const CartCheckoutCCollectionItem = ({
                             </span>
 
                             {/* Cart Item Quantity */}
-                            <SlideUpFade 
-                                value={quantity}
-                                className="flex-1 p-1 active:scale-[.97] border-x border-border" 
-                            />
+                            <span className='flex-1 p-1 active:scale-[.97] border-x border-border'>
+                                <SlideUpFade 
+                                    value={quantity}
+                                    className="" 
+                                />
+                            </span>
 
                             {/* Cart Quantity Increase Button */}
                             <span 
@@ -73,7 +75,7 @@ const CartCheckoutCCollectionItem = ({
                 </div>
             </div>
 
-            <p className="text-lg font-bold">${price}</p>
+            <p className="text-lg font-medium tracking-tight">${price}</p>
         </blockquote>
     )
 }

@@ -1,12 +1,13 @@
 import Hero from "@/components/Hero";
-import ProductCollection from "@/components/ProductCollection";
-
+import ShopCategories from "./ShopCategories";
+import FeaturedProducts from "./FeaturedProducts";
 
 export default function Home() {
   return (
     <>  
       <Hero />
-      <ProductCollection />
+      <ShopCategories />
+      <FeaturedProducts />
     </>
   );
 }

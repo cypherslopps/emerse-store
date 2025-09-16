@@ -1,9 +1,10 @@
 "use client"
 
+import React from 'react';
+
 import CartCheckoutCollection from '@/components/CartCheckoutCollection';
-import CheckoutForm from '@/components/forms/CheckoutForm';
-import useCart from '@/hooks/useCart'
-import React from 'react'
+import CheckoutBox from '@/components/containers/CheckoutBox';
+import useCart from '@/hooks/useCart';
 
 const Cart = () => {
     const { totalCartItemsCount } = useCart();
@@ -16,8 +17,8 @@ const Cart = () => {
                 {/* Checkout collection */}
                 <CartCheckoutCollection />
 
-                {/* Checkout Form */}
-                <CheckoutForm />
+                {/* Checkout Box */}
+                <CheckoutBox />
             </section>
         </main>
     )

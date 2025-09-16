@@ -65,7 +65,7 @@ const CartBasketCollection = () => {
   return (
     <>
       <ScrollArea className="h-[calc(20rem-4rem)]">
-        <div className="space-y-2 pt-3 px-3">
+        <div className="space-y-2 pt-3 px-3.5">
           {cartItems.map(item => (
             <CartBasketCollectionItem 
               key={item.id}
